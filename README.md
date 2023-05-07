@@ -1,3 +1,3 @@
-- 👋 Hi, I’m @ben10pedrin
+- 👋 Hi, I’m @pedroalonsoms
 - 👀 I’m interested in Web and Mobile
 - 🌱 I’m currently learning React
