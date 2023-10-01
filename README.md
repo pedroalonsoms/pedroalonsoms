@@ -1,3 +1,3 @@
-- 👋 Hi, I’m @pedroalonsoms
-- 👀 I’m interested in Web and Mobile
-- 🌱 I’m currently learning React
+  <p align="center">
+ <img src="https://media.giphy.com/media/8UHRm5oY4k4FDxq5QG/giphy.gif" width="30px" alt="GitHub-Status"/>&nbsp;<i><b>GitHub Stats</b></i><img src="https://media.giphy.com/media/8UHRm5oY4k4FDxq5QG/giphy.gif" width="30px" alt="GitHub-Status"/></p>
+<p><img align="left" src="https://github-readme-stats.vercel.app/api/top-langs?username=pedroalonsoms&show_icons=true&locale=en&layout=compact" alt="pedroalonsoms" /></p>
