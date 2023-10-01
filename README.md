@@ -1,3 +1,19 @@
+# Pedro Alonso Moreno Salcedo
+
+Hello, I'm a BS. in Computer Science and Technology student at Tec de Monterrey, with expected graduation date June 2025.
+
+```javascript
+class Me {
+  constructor() {
+    this.name = "👋 Pedro Alonso Moreno Salcedo";
+    this.location = "⛰️ Monterrey, NL, Mexico";
+    this.favoriteLanguage = "💻 Typescript";
+    this.favoriteFramework = "⚒️ React";
+    this.areaOfInterest = "🌍 FullStack Web";
+  }
+}
+```
+
 # 💻 Tech Stack
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E) 
