@@ -1,6 +1,27 @@
 ---
+// TODO: there's probably an elegant way to solve this
+import "@fontsource/iosevka/100.css";
+import "@fontsource/iosevka/200.css";
+import "@fontsource/iosevka/300.css";
+import "@fontsource/iosevka/400.css";
+import "@fontsource/iosevka/500.css";
+import "@fontsource/iosevka/600.css";
+import "@fontsource/iosevka/700.css";
+import "@fontsource/iosevka/800.css";
+import "@fontsource/iosevka/900.css";
+
+import "@fontsource/iosevka/100-italic.css";
+import "@fontsource/iosevka/200-italic.css";
+import "@fontsource/iosevka/300-italic.css";
+import "@fontsource/iosevka/400-italic.css";
+import "@fontsource/iosevka/500-italic.css";
+import "@fontsource/iosevka/600-italic.css";
+import "@fontsource/iosevka/700-italic.css";
+import "@fontsource/iosevka/800-italic.css";
+import "@fontsource/iosevka/900-italic.css";
+
 interface Props {
-	title: string;
+  title: string;
 }
 
 const { title } = Astro.props;
@@ -8,15 +29,15 @@ const { title } = Astro.props;
 
 <!doctype html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="description" content="Astro description" />
-		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<meta name="generator" content={Astro.generator} />
-		<title>{title}</title>
-	</head>
-	<body>
-		<slot />
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="bg-black">
+    <slot />
+  </body>
 </html>
