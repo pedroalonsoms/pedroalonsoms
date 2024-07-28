@@ -37,7 +37,7 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-black text-white font-extralight text-3xl">
+  <body class="bg-black text-white font-extralight text-2xl">
     <nav class="flex justify-between p-6">
       <a href="/">pedroalonsoms</a>
       <div class="flex gap-6">
@@ -51,5 +51,33 @@ const { title } = Astro.props;
     <main>
       <slot />
     </main>
+
+    <footer class="pt-40 px-6 pb-6">
+      <div class="flex justify-between">
+        <div class="flex gap-6">
+          <p>
+            made with <a
+              class="underline"
+              href="https://astro.build/"
+              target="_blank">astro</a
+            >
+          </p>
+          <p>
+            hosted on <a
+              class="underline"
+              href="https://pages.cloudflare.com/"
+              target="_blank">cloduflare pages</a
+            >
+          </p>
+        </div>
+        <a
+          class="underline"
+          href="https://github.com/pedroalonsoms/pedroalonsoms"
+          target="_blank"
+        >
+          source code
+        </a>
+      </div>
+    </footer>
   </body>
 </html>

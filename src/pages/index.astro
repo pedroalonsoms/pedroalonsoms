@@ -1,11 +1,23 @@
 ---
+import { Image } from "astro:assets";
+import inTrendImage from "./projects/1-in-trend/_assets/0.jpg";
+import sinaloaCovidAppImage from "./projects/2-sinaloa-covid-app/_assets/0.png";
+import reactNativeVsFlutterVsNativeImage from "./projects/3-react-native-vs-flutter-vs-native/_assets/0.jpg";
+import feedbackFlowImage from "./projects/4-feedbackflow/_assets/0.png";
+import sunnysideAgencyLandingPageImage from "./projects/5-sunnyside-agency-landing-page/_assets/0.png";
+import roomHomepageImage from "./projects/6-room-homepage/_assets/0.png";
+import newsHomepageImage from "./projects/7-news-homepage/_assets/0.png";
+import insureLandingPageImage from "./projects/8-insure-landing-page/_assets/0.png";
+import spacestagramImage from "./projects/9-spacestagram/_assets/0.png";
+import ecoaImage from "./projects/10-ecoa/_assets/0.png";
+import laikaImage from "./projects/11-laika/_assets/0.png";
 import Layout from "../layouts/Layout.astro";
 ---
 
 <Layout title="pedroalonsoms">
   <main class="max-w-screen-lg mx-auto px-6">
-    <section>
-      <h1 class="text-6xl">
+    <section class="pt-10">
+      <h1 class="text-5xl">
         <span class="text-gray-500">#</span> Hello, I'm Pedro
       </h1>
       <p class="pt-6">
@@ -25,16 +37,149 @@ import Layout from "../layouts/Layout.astro";
     </section>
 
     <section class="pt-20">
-      <h1 class="text-5xl">
+      <h2 class="text-4xl">
         <span class="text-gray-500">##</span> Projects
-      </h1>
+      </h2>
       <div class="pt-6">
-        <div class="grid grid-cols-3">
-          <div class="w-full h-50 bg-blue-400">hi</div>
-          <div class="w-full h-50 bg-blue-400">hi</div>
-          <div class="w-full h-50 bg-blue-400">hi</div>
-          <div class="w-full h-50 bg-blue-400">hi</div>
-          <div class="w-full h-50 bg-blue-400">hi</div>
+        <div class="grid md:grid-cols-3 gap-10">
+          <article class="mt-auto w-full">
+            <a href="/projects/1-in-trend" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={inTrendImage}
+                alt="In-Trend website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">In-Trend</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/2-sinaloa-covid-app" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={sinaloaCovidAppImage}
+                alt="Sinaloa Covid App website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Sinaloa Covid App</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a
+              href="/projects/3-react-native-vs-flutter-vs-native"
+              class="block"
+            >
+              <Image
+                class="aspect-square object-contain"
+                src={reactNativeVsFlutterVsNativeImage}
+                alt="React Native Vs Flutter Vs Native video"
+                width={720}
+              />
+              <p class="text-center underline pt-4">
+                React Native Vs Flutter Vs Native
+              </p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/4-feedbackflow" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={feedbackFlowImage}
+                alt="FeedbackFlow website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Feedbackflow</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/5-sunnyside-agency-landing-page" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={sunnysideAgencyLandingPageImage}
+                alt="Sunnyside Agency Landing Page"
+                width={720}
+              />
+              <p class="text-center underline pt-4">
+                Sunnyside Agency Landing Page
+              </p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/6-room-homepage" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={roomHomepageImage}
+                alt="Room Homepage"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Room Homepage</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/7-news-homepage" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={newsHomepageImage}
+                alt="News Homepage"
+                width={720}
+              />
+              <p class="text-center underline pt-4">News Homepage</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/8-insure-landing-page" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={insureLandingPageImage}
+                alt="Insure Landing Page"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Insure Landing Page</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/9-spacestagram" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={spacestagramImage}
+                alt="Spacestagram Website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Spacestagram</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/10-ecoa" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={ecoaImage}
+                alt="Ecoa Website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Ecoa</p>
+            </a>
+          </article>
+
+          <article class="mt-auto w-full">
+            <a href="/projects/11-laika" class="block">
+              <Image
+                class="aspect-square object-contain"
+                src={laikaImage}
+                alt="Laika Website"
+                width={720}
+              />
+              <p class="text-center underline pt-4">Laika</p>
+            </a>
+          </article>
         </div>
       </div>
     </section>
