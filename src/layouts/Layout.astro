@@ -37,7 +37,19 @@ const { title } = Astro.props;
     <meta name="generator" content={Astro.generator} />
     <title>{title}</title>
   </head>
-  <body class="bg-black">
-    <slot />
+  <body class="bg-black text-white font-extralight text-3xl">
+    <nav class="flex justify-between p-6">
+      <a href="/">pedroalonsoms</a>
+      <div class="flex gap-6">
+        <a class="underline decor" href="/">home</a>
+        <a class="underline decor" href="/">about me</a>
+        <a class="underline decor" href="">blog</a>
+        <a class="underline decor" href="">links</a>
+      </div>
+    </nav>
+
+    <main>
+      <slot />
+    </main>
   </body>
 </html>
