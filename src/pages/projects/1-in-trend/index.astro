@@ -1,0 +1,56 @@
+---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.jpg";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import image3 from "./_assets/3.png";
+import image4 from "./_assets/4.png";
+import image5 from "./_assets/5.png";
+import image6 from "./_assets/6.png";
+import image7 from "./_assets/7.png";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="pedroalonsoms - blog">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> In-Trend
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- GitHub:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://github.com/pedroalonsoms/in-trend"
+          >
+            https://github.com/pedroalonsoms/in-trend
+          </a>
+        </li>
+        <li>
+          <strong>- Live:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://www.in-trend-ltd.com/"
+          >
+            https://www.in-trend-ltd.com/
+          </a>
+        </li>
+      </ul>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image src={image0} width={720} class="w-full" alt="In Trend" />
+        <Image src={image1} width={720} class="w-full" alt="In Trend" />
+        <Image src={image2} width={720} class="w-full" alt="In Trend" />
+        <Image src={image3} width={720} class="w-full" alt="In Trend" />
+        <Image src={image4} width={720} class="w-full" alt="In Trend" />
+        <Image src={image5} width={720} class="w-full" alt="In Trend" />
+        <Image src={image6} width={720} class="w-full" alt="In Trend" />
+        <Image src={image7} width={720} class="w-full" alt="In Trend" />
+      </div>
+    </section>
+  </main>
+</Layout>
