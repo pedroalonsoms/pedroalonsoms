@@ -1,0 +1,51 @@
+---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.png";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="pedroalonsoms - Spacestagram">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> Spacestagram
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- Live:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://ben10pedrin-spacestagram.vercel.app/"
+          >
+            https://ben10pedrin-spacestagram.vercel.app/
+          </a>
+        </li>
+        <li>
+          <strong>- GitHub:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://github.com/pedroalonsoms/shopify-spacestagram"
+          >
+            https://github.com/pedroalonsoms/shopify-spacestagram
+          </a>
+        </li>
+      </ul>
+
+      <p class="pt-6">
+        This page queried the Nasa REST API to get space info and displays them
+        in a website.
+      </p>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image src={image0} width={720} class="w-full" alt="Spacestagram" />
+        <Image src={image1} width={720} class="w-full" alt="Spacestagram" />
+        <Image src={image2} width={720} class="w-full" alt="Spacestagram" />
+      </div>
+    </section>
+  </main>
+</Layout>

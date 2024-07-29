@@ -11,7 +11,7 @@ pedroalonsom's personal website
 ## Copyright
 
 - Inspired on: https://andy-bell.co.uk/links/
-- Feel free to use parts of this style/code, however, do not copy the entire thing
+- Feel free to use parts of this style/code, however, **do not copy the entire thing**
 
 ## Ideas
 

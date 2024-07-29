@@ -1,0 +1,59 @@
+---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.png";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="pedroalonsoms - News Homepage">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> News Homepage
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- Live:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://pedroalonsoms.github.io/news-homepage/"
+          >
+            https://pedroalonsoms.github.io/news-homepage/
+          </a>
+        </li>
+        <li>
+          <strong>- GitHub:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://github.com/pedroalonsoms/news-homepage"
+          >
+            https://github.com/pedroalonsoms/news-homepage
+          </a>
+        </li>
+      </ul>
+
+      <p class="pt-6">
+        This was done as part of a
+        <a
+          target="_blank"
+          class="underline"
+          href="https://www.frontendmentor.io/"
+        >
+          FrontendMentor</a
+        >
+        challenge, where I was given a design and had to implement it using HTML,
+        CSS & JS. Got 95+ performance score on first-page load.
+      </p>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image src={image0} width={720} class="w-full" alt="News Homepage" />
+        <Image src={image1} width={720} class="w-full" alt="News Homepage" />
+        <Image src={image2} width={720} class="w-full" alt="News Homepage" />
+      </div>
+    </section>
+  </main>
+</Layout>

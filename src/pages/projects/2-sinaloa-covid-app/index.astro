@@ -1,5 +1,94 @@
 ---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.png";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import image3 from "./_assets/3.png";
+import image4 from "./_assets/4.png";
+import image5 from "./_assets/5.png";
+import image6 from "./_assets/6.png";
 import Layout from "../../../layouts/Layout.astro";
 ---
 
-<Layout title="pedroalonsoms">sinaloa-covid-app</Layout>
+<Layout title="pedroalonsoms - Sinaloa Covid App">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> Sinaloa Covid App
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- Live:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://sinaloa-covid-app.netlify.app/"
+          >
+            https://sinaloa-covid-app.netlify.app/
+          </a>
+        </li>
+        <li>
+          <strong>- GitHub:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://github.com/pedroalonsoms/sinaloa-covid-app"
+          >
+            https://github.com/pedroalonsoms/sinaloa-covid-app
+          </a>
+        </li>
+      </ul>
+
+      <p class="pt-6">
+        Sinaloa Covid Appp is a dashboard which I developed in high-school to
+        visualize pandemic metrics in Sinaloa's state.
+      </p>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image
+          src={image0}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image1}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image2}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image3}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image4}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image5}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+        <Image
+          src={image6}
+          width={720}
+          class="w-full"
+          alt="Sinaloa Covid App"
+        />
+      </div>
+    </section>
+  </main>
+</Layout>

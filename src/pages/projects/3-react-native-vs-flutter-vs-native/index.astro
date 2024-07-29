@@ -1,0 +1,42 @@
+---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.jpg";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import Layout from "../../../layouts/Layout.astro";
+---
+
+<Layout title="pedroalonsoms - React Native Vs Flutter Vs Native">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> React Native Vs Flutter Vs Native
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- Live:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://www.youtube.com/watch?v=kjvfqfNadcM"
+          >
+            https://www.youtube.com/watch?v=kjvfqfNadcM
+          </a>
+        </li>
+      </ul>
+
+      <p class="pt-6">
+        I decided to make this video in a summer to demonstrate performance
+        differences between different mobile frameworks to see which one was
+        best.
+      </p>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image src={image0} width={720} class="w-full" alt="In Trend" />
+        <Image src={image1} width={720} class="w-full" alt="In Trend" />
+        <Image src={image2} width={720} class="w-full" alt="In Trend" />
+      </div>
+    </section>
+  </main>
+</Layout>

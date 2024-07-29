@@ -1,5 +1,57 @@
 ---
+import { Image } from "astro:assets";
+import image0 from "./_assets/0.png";
+import image1 from "./_assets/1.png";
+import image2 from "./_assets/2.png";
+import image3 from "./_assets/3.png";
+import image4 from "./_assets/4.png";
+import image5 from "./_assets/5.png";
+import image6 from "./_assets/6.png";
+import image7 from "./_assets/7.png";
+import image8 from "./_assets/8.png";
+import image9 from "./_assets/9.png";
 import Layout from "../../../layouts/Layout.astro";
 ---
 
-<Layout title="pedroalonsoms">feedbackflow</Layout>
+<Layout title="pedroalonsoms - Feedbackflow">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> Feedbackflow
+      </h1>
+
+      <ul class="pt-6">
+        <li>
+          <strong>- GitHub:</strong>
+          <a
+            class="underline"
+            target="_blank"
+            href="https://github.com/wizelineacademy/itesm-socioformador-feb-jun-2024-Azteca"
+          >
+            https://github.com/wizelineacademy/itesm-socioformador-feb-jun-2024-Azteca
+          </a>
+        </li>
+      </ul>
+
+      <p class="pt-6">
+        Feedbackflow is a project 5 friends and I developed in college as part
+        of a class/collaboration between Wizeline and TecDeMonterrey. It aimed
+        to collect employee feedback and use AI to generate insights for
+        companies.
+      </p>
+
+      <div class="pt-6 grid gap-6 sm:grid-cols-3">
+        <Image src={image0} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image1} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image2} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image3} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image4} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image5} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image6} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image7} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image8} width={720} class="w-full" alt="Feedbackflow" />
+        <Image src={image9} width={720} class="w-full" alt="Feedbackflow" />
+      </div>
+    </section>
+  </main>
+</Layout>
