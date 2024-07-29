@@ -1,5 +1,103 @@
 ---
+import { Image } from "astro:assets";
+import pedroImage from "./_assets/pedro.jpeg";
 import Layout from "../../layouts/Layout.astro";
 ---
 
-<Layout title="pedroalonsoms">about me i like youtubers: </Layout>
+<Layout title="pedroalonsoms - about me">
+  <main class="max-w-screen-lg mx-auto px-6">
+    <section class="pt-10">
+      <h1 class="text-5xl">
+        <span class="text-gray-500">#</span> About Me
+      </h1>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> Early Life and Introduction to Technology
+      </h2>
+
+      <p class="pt-6">
+        I was born in Culiacán, Sinaloa, Mexico, in 2003. At two, I moved to Los
+        Mochis, where I developed an early interest in technology. As a child, I
+        played video games like Minecraft and helped my mom's furniture business
+        by repairing computers whenever she had issues.
+      </p>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> Dreaming of Computers
+      </h2>
+
+      <p class="pt-6">
+        I've always dreamed of having my own PC. My first computer was a
+        Mid-2012 MacBook Pro. I received an iPod 4 in elementary school and
+        learned to hack it for modifying games and installing iOS themes with
+        the Cydia app
+        <a
+          href="https://en.wikipedia.org/wiki/IOS_jailbreaking"
+          target="_blank"
+          class="underline"
+        >
+          [Jailbreaking]</a
+        >. My friends were amazed when I got 999,999+ coins in Subway Surfers.
+      </p>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> Exploring Hacking and Linux
+      </h2>
+
+      <p class="pt-6">
+        In junior high, I developed an interest in hacking and taught myself
+        through YouTube tutorials. I wanted to hack Wi-Fi at my grandmother's
+        house and discovered WifiSlax, which introduced me to Linux. My
+        curiosity about operating systems grew, leading me to install
+        Metasploit, Linux Mint, and Ubuntu using USB drives. I became the family
+        tech expert, fixing printers and phones.
+      </p>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> High School and Programming
+      </h2>
+
+      <p class="pt-6">
+        I moved back to Culiacán to study at Tecnológico de Monterrey
+        (PrepaTec), where I learned basic programming in C/C++ and Arduino.
+        Realizing my passion for computers, I built my first website,
+        <a class="underline" href="/projects/2-sinaloa-covid-app"
+          >[SinaloaCovidApp]</a
+        >, to apply for scholarships. This project, which taught me HTML, CSS,
+        and JavaScript, placed me among the top 500 finalists and earned
+        recognition from my school and the municipal president. High school also
+        sparked my interest in mobile development, leading me to experiment with
+        frameworks like React Native, Flutter, and native development.
+      </p>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> Getting a CS Degree
+      </h2>
+
+      <p class="pt-6">
+        I was fortunate enough to get a 70% academic scholarship to go to
+        University. Upon entering college, I moved to Monterrey to pursue a
+        bachelor's degree in Computer Science at Tecnológico de Monterrey.
+        There, I met several of my best friends and developed numerous projects.
+      </p>
+
+      <h2 class="text-4xl pt-6">
+        <span class="text-gray-500">##</span> Internship at Oracle
+      </h2>
+
+      <p class="pt-6">
+        In my seventh semester, after months of practicing coding problems on
+        LeetCode, I secured my first internship at Oracle. This opportunity
+        allowed me to move to Guadalajara, Mexico, to visit their offices for
+        six months.
+      </p>
+
+      <Image
+        class="pt-6 mx-auto w-full sm:max-w-80"
+        src={pedroImage}
+        width={720}
+        alt="Pedro Alonso Moreno Salcedo"
+      />
+    </section>
+  </main>
+</Layout>
