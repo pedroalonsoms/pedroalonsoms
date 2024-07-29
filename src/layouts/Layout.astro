@@ -19,6 +19,7 @@ import "@fontsource/iosevka/600-italic.css";
 import "@fontsource/iosevka/700-italic.css";
 import "@fontsource/iosevka/800-italic.css";
 import "@fontsource/iosevka/900-italic.css";
+import NavBar from "../components/NavBar.astro";
 
 interface Props {
   title: string;
@@ -38,38 +39,14 @@ const { title } = Astro.props;
     <title>{title}</title>
   </head>
   <body class="bg-black text-white font-extralight text-2xl">
-    <nav class="flex justify-between p-6">
-      <a href="/">pedroalonsoms</a>
-      <div class="flex gap-6">
-        <a class="underline decor" href="/">home</a>
-        <a class="underline decor" href="/about-me">about me</a>
-        <a class="underline decor" href="/blog">blog</a>
-        <a class="underline decor" href="/contact">contact</a>
-      </div>
-    </nav>
+    <NavBar />
 
     <main>
       <slot />
     </main>
 
     <footer class="pt-40 px-6 pb-6">
-      <div class="flex justify-between">
-        <div class="flex gap-6">
-          <p>
-            made with <a
-              class="underline"
-              href="https://astro.build/"
-              target="_blank">astro</a
-            >
-          </p>
-          <p>
-            hosted on <a
-              class="underline"
-              href="https://pages.cloudflare.com/"
-              target="_blank">cloduflare pages</a
-            >
-          </p>
-        </div>
+      <div class="flex justify-end">
         <a
           class="underline"
           href="https://github.com/pedroalonsoms/pedroalonsoms"

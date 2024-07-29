@@ -1,0 +1,86 @@
+---
+import IconClose from "../icons/IconClose.astro";
+import IconHamburger from "../icons/IconHamburger.astro";
+---
+
+<header class="flex justify-between p-6">
+  <a class="z-10" href="/">pedroalonsoms</a>
+
+  <nav
+    class="primary-nav hidden fixed inset-x-0 top-0 z-0 h-screen md:block bg-black md:inset-auto md:z-auto md:static md:h-auto md:bg-transparent"
+  >
+    <div
+      class="grid h-full place-content-center justify-items-center gap-6 md:flex"
+    >
+      <a class="underline decor" href="/">home</a>
+      <a class="underline decor" href="/about-me">about me</a>
+      <a class="underline decor" href="/blog">blog</a>
+      <a class="underline decor" href="/contact">contact</a>
+
+      <button class="primary-nav__close-button md:hidden">
+        <IconClose class="h-12 w-12 text-brown-600" />
+      </button>
+    </div>
+  </nav>
+
+  <button class="primary-nav__toggle-button md:hidden z-10">
+    <IconHamburger class="h-6 w-auto" />
+  </button>
+</header>
+
+<script>
+  // TODO: move this stuff into a /shared folder
+  function querySelectorOrError(query: string) {
+    const element = document.querySelector(`${query}`);
+
+    if (element !== null) {
+      return element;
+    }
+
+    throw new Error(`ERROR: no elements matched query ${query}`);
+  }
+
+  const primaryNav = {
+    toggleButton: querySelectorOrError(".primary-nav__toggle-button"),
+    closeButton: querySelectorOrError(".primary-nav__close-button"),
+    nav: querySelectorOrError(".primary-nav"),
+  };
+
+  let isNavOpen = false;
+
+  const openPrimaryNav = () => {
+    primaryNav.nav.classList.toggle("hidden");
+    isNavOpen = true;
+  };
+
+  const closePrimaryNav = () => {
+    primaryNav.nav.classList.toggle("hidden");
+    isNavOpen = false;
+  };
+
+  /*
+      Close navigation bar when we resize window
+      Reference: https://css-tricks.com/working-with-javascript-media-queries/
+    */
+
+  const mediaQuery = window.matchMedia("(min-width: 768px)");
+  mediaQuery.addEventListener("change", (e) => {
+    if (e.matches && isNavOpen) {
+      closePrimaryNav();
+    }
+  });
+
+  primaryNav.toggleButton.addEventListener("click", () => {
+    if (!isNavOpen) {
+      openPrimaryNav();
+    } else {
+      closePrimaryNav();
+    }
+  });
+
+  primaryNav.closeButton.addEventListener("click", () => {
+    if (isNavOpen) {
+      closePrimaryNav();
+    }
+  });
+</script>
