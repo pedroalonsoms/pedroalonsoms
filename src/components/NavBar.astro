@@ -3,7 +3,7 @@ import IconClose from "../icons/IconClose.astro";
 import IconHamburger from "../icons/IconHamburger.astro";
 ---
 
-<header class="flex justify-between p-6">
+<header class="top-0 flex justify-between p-6">
   <a class="z-10" href="/">pedroalonsoms</a>
 
   <nav
@@ -43,6 +43,7 @@ import IconHamburger from "../icons/IconHamburger.astro";
   const primaryNav = {
     toggleButton: querySelectorOrError(".primary-nav__toggle-button"),
     closeButton: querySelectorOrError(".primary-nav__close-button"),
+    header: querySelectorOrError("header"),
     nav: querySelectorOrError(".primary-nav"),
   };
 
@@ -50,11 +51,13 @@ import IconHamburger from "../icons/IconHamburger.astro";
 
   const openPrimaryNav = () => {
     primaryNav.nav.classList.toggle("hidden");
+    primaryNav.header.classList.toggle("sticky");
     isNavOpen = true;
   };
 
   const closePrimaryNav = () => {
     primaryNav.nav.classList.toggle("hidden");
+    primaryNav.header.classList.toggle("sticky");
     isNavOpen = false;
   };
 
